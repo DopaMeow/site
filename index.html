@@ -4,19 +4,53 @@
     <title>DopaMeow</title>
     <meta name="description" content="An app for neurodivergent folks" />
     <style>
-        body {
-            background: white;
-            text-align: center;
-            font-family: 'Courier New', Courier, monospace;
-        }
+      body {
+        background: white;
+        font-family: "Courier New", Courier, monospace;
+        padding: 1rem;
+      }
 
-        svg {
-            width: 50%;
-            height: auto;
-            margin: 1rem auto;
-        }
+      svg {
+        width: 50%;
+        height: auto;
+        margin: 0 25%;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      form {
+        max-width: 20rem;
+      }
+
+      label {
+        font-weight: bold;
+        letter-spacing: 0.02em;
+      }
+
+      input {
+        width: 100%;
+        margin: 0.5rem 0 1rem;
+        font-size: 1.2rem;
+        border: 2px solid black;
+        font-weight: normal;
+      }
+
+      button {
+        background: black;
+        color: white;
+        border-radius: 0;
+        box-shadow: none;
+        border: 0;
+        padding: 0.5em 1.6em;
+        letter-spacing: 0.14em;
+        font-size: 1rem;
+      }
+
     </style>
-    </head>
+  </head>
   <body>
     <svg
       role="presentation"
@@ -116,6 +150,29 @@
     </svg>
 
     <h1>DopaMeow</h1>
-    <p>Stay tuned</p>
+
+    <h2>Apply for alpha-testing</h2>
+    <p>
+      Be the first to know when we release alpha version. You'll get invited to
+      sneak a peak, test and give your feedback. <br />
+      It's free for all.
+    </p>
+
+    <form name="alpha-testing" netlify>
+      <label>
+        Name:
+        <input type="text" name="name" autocomplete="name nickname given-name"/>
+      </label>
+      <label>
+        Pronouns:
+        <input type="text" name="pronouns" />
+      </label>
+      <label
+        >Email (required):
+        <input type="email" name="email" autocomplete="email" required />
+      </label>
+
+      <button type="submit">Apply</button>
+    </form>
   </body>
 </html>
