@@ -18,6 +18,10 @@
 
       h1 {
         text-align: center;
+      }
+
+      h1 + p {
+        text-align: center;
         margin-bottom: 2rem;
       }
 
@@ -49,6 +53,10 @@
         font-size: 1rem;
       }
 
+      section {
+        max-width: 21.5rem;
+        margin: auto;
+      }
     </style>
   </head>
   <body>
@@ -150,29 +158,37 @@
     </svg>
 
     <h1>DopaMeow</h1>
+    <p>A web app for neurodivergent people</p>
 
-    <h2>Apply for alpha-testing</h2>
-    <p>
-      Be the first to know when we release alpha version. You'll get invited to
-      sneak a peak, test and give your feedback. <br />
-      It's free for all.
-    </p>
+    <section>
+      <h2>Apply for alpha-testing</h2>
+      <p>
+        Be the first to know when we release alpha version.
+        <br> You'll get invited
+        to sneak a peak, test and give your feedback. <br />
+        It's free for all.
+      </p>
 
-    <form name="alpha-testing" netlify>
-      <label>
-        Name:
-        <input type="text" name="name" autocomplete="name nickname given-name"/>
-      </label>
-      <label>
-        Pronouns:
-        <input type="text" name="pronouns" />
-      </label>
-      <label
-        >Email (required):
-        <input type="email" name="email" autocomplete="email" required />
-      </label>
+      <form name="alpha-testing" netlify>
+        <label>
+          Name:
+          <input
+            type="text"
+            name="name"
+            autocomplete="name nickname given-name"
+          />
+        </label>
+        <label>
+          Pronouns:
+          <input type="text" name="pronouns" />
+        </label>
+        <label
+          >Email (required):
+          <input type="email" name="email" autocomplete="email" required />
+        </label>
 
-      <button type="submit">Apply</button>
-    </form>
+        <button type="submit">Apply</button>
+      </form>
+    </section>
   </body>
 </html>
