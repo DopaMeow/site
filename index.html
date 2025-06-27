@@ -3,6 +3,7 @@
   <head>
     <title>DopaMeow</title>
     <meta name="description" content="An app for neurodivergent folks" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
       body {
         background: white;
@@ -14,6 +15,17 @@
         width: 50%;
         height: auto;
         margin: 0 25%;
+      }
+
+      .svg-dark {
+        fill: rgb(16, 16, 16);
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body {
+          background: rgb(57, 57, 57);
+          color: white
+        }
       }
 
       h1 {
@@ -68,15 +80,7 @@
     >
       <title>DopaMeow logo</title>
       <g clip-path="url(#clip0_24_227)">
-        <rect width="3230" height="3230" fill="white" />
-        <rect
-          x="-3301"
-          y="-2737"
-          width="8197"
-          height="8197"
-          fill="url(#paint0_radial_24_227)"
-        />
-        <rect x="-105" width="3508" height="3330" fill="white" />
+        <rect x="-105" width="3508" height="3330" class="svg-bg" />
         <path
           d="M1921.25 2312.23L2396.79 2536.65V2558.08H2341.92L2177.31 2481.39L2040.67 2411.47L1878.22 2338.17L1702.85 2203.96L1585.58 2158.85L1496.28 2245.69L1358.57 2338.17L1196.11 2481.39L1103.59 2536.65L1076.69 2510.72V2468.99L1201.49 2361.85L1496.28 2158.85L1570.52 2087.81V2017.88V1966.01H1600.64V2087.81L1716.84 2158.85L1921.25 2312.23Z"
           fill="#A26868"
@@ -88,11 +92,11 @@
         />
         <path
           d="M206.306 1049.14L331.108 985.983L511.855 936.362L717.348 961.173L901.323 1014.18L1046.57 1107.78L1101.97 1207.59L1124.03 1324.31L1020.74 1404.38L791.583 1450.62L511.855 1425.81L331.108 1353.63L232.127 1245.37L169.727 1151.76L206.306 1049.14Z"
-          fill="#0C0C0C"
+          class="svg-dark"
         />
         <path
           d="M2008.4 1082.97V1221.69L2152.57 1324.31H2358.06L2805.62 1221.69L3002.51 1082.97L3059.53 908.168L2907.83 823.586L2700.19 775.092H2509.76L2304.27 823.586L2152.57 893.507L2008.4 1082.97Z"
-          fill="#0C0C0C"
+          class="svg-dark"
         />
         <path
           d="M2668.99 935.234L2740 997.261L2767.97 1087.48L2740 1154.02L2668.99 1192.36L2568.93 1216.05L2482.86 1245.37H2339.77H2220.35L2143.96 1202.51L2123.52 1154.02L2143.96 1064.93L2220.35 967.939L2327.93 909.295L2449.51 884.485H2568.93L2668.99 935.234Z"
@@ -112,49 +116,23 @@
         />
         <path
           d="M2501.15 983.727L2417.23 955.533L2289.2 962.3L2193.45 1032.22L2174.08 1110.04L2193.45 1196.87L2269.84 1252.13H2374.2L2525.89 1241.98L2572.16 1196.87L2578.61 1124.7L2560.32 1053.65L2501.15 983.727Z"
-          fill="#0B0B0B"
+          class="svg-dark"
         />
         <path
           d="M736.712 1111.16L795.885 1161.91L826.009 1257.77L808.795 1334.46L795.885 1364.91L767.912 1390.85H673.235L495.715 1347.99L436.542 1293.86V1209.28L449.453 1167.55L480.653 1124.7L549.509 1087.48H638.807L736.712 1111.16Z"
-          fill="#0B0B0B"
+          class="svg-dark"
         />
         <path
           fill-rule="evenodd"
           clip-rule="evenodd"
           d="M647.414 1217.17L636.656 1248.75L602.228 1255.52L573.179 1244.24L563.496 1222.81L573.179 1198H588.241L596.848 1183.34H612.986L636.656 1191.24L647.414 1217.17Z"
-          fill="white"
+          fill="#fbfbfb"
         />
         <path
           d="M2386.03 1112.29L2376.35 1130.34L2351.61 1135.98L2319.33 1130.34L2301.04 1108.91V1078.46L2313.95 1073.95L2325.78 1058.16L2351.61 1053.65L2381.73 1063.8L2389.26 1087.48L2386.03 1112.29Z"
-          fill="white"
+          fill="#fbfbfb"
         />
       </g>
-      <defs>
-        <radialGradient
-          id="paint0_radial_24_227"
-          cx="0"
-          cy="0"
-          r="1"
-          gradientUnits="userSpaceOnUse"
-          gradientTransform="translate(797.5 1361.5) rotate(90) scale(4098.5)"
-        >
-          <stop stop-color="#FFD5D5" />
-          <stop offset="0.15" stop-color="#FFD5D5" />
-          <stop offset="0.16" stop-color="white" />
-          <stop offset="0.3" stop-color="white" />
-          <stop offset="0.31" stop-color="#FFD5D5" />
-          <stop offset="0.45" stop-color="#FFD5D5" />
-          <stop offset="0.46" stop-color="white" />
-          <stop offset="0.6" stop-color="white" />
-          <stop offset="0.61" stop-color="#FFD5D5" />
-          <stop offset="0.75" stop-color="#FFD5D5" />
-          <stop offset="0.76" stop-color="white" />
-          <stop offset="0.9" stop-color="white" />
-        </radialGradient>
-        <clipPath id="clip0_24_227">
-          <rect width="3230" height="3230" fill="white" />
-        </clipPath>
-      </defs>
     </svg>
 
     <h1>DopaMeow</h1>
@@ -164,8 +142,8 @@
       <h2>Apply for alpha-testing</h2>
       <p>
         Be the first to know when we release alpha version.
-        <br> You'll get invited
-        to sneak a peak, test and give your feedback. <br />
+        <br />
+        You'll get invited to sneak a peak, test and give your feedback. <br />
         It's free for all.
       </p>
 
